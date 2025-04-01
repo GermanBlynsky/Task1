@@ -9,11 +9,9 @@
 using namespace std;
 int main() {
 
-    std::string filename = "name.txt";
-
     std::string symbols = "HelloWorld!";
 
-    ofstream outputFile(filename); 
+    ofstream outputFile("name.txt");
 
     if (outputFile.is_open()) {
         ostream_iterator<char> output_iterator(outputFile, " ");
